@@ -8,7 +8,7 @@ El notebook `desafio.ipynb` corre completo hasta la sección 9 (unos 6–7 minut
 
 **🟨 10 resuelto (2026-11-16):** minimax → reparto "sin E · normal"; `entrega.csv` generado y validado; README final escrito. Pendiente: decidir si se adjunta el reparto "como 2020" como anexo y armar la presentación.
 
-**Git:** hay dos commits locales sin pushear (`c357f1e`, `64e81d6`). El push lo hace Osvaldo.
+**Git:** commits locales sin pushear desde `c357f1e`. El push lo hace Osvaldo.
 
 ## Decisiones tomadas (y por qué)
 
