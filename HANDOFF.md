@@ -6,7 +6,7 @@
 
 El notebook `desafio.ipynb` corre completo hasta la sección 9 (unos 6–7 minutos con `jupyter nbconvert --to notebook --execute --inplace desafio.ipynb`). Falta **una sola decisión** y la entrega.
 
-**🟨 10 resuelto (2026-11-16):** minimax → reparto "sin E · normal"; `entrega.csv` generado y validado; README final escrito. Pendiente: decidir si se adjunta el reparto "como 2020" como anexo y armar la presentación.
+**🟨 10 resuelto (2026-11-16):** minimax → reparto "sin E · normal"; `entrega.csv` generado y validado; README final escrito. Anexo `anexos/reparto_como_2020.csv` agregado (avisarle al profe por escrito que no es una segunda entrega). Pendiente: Osvaldo relee README y notebook; después, presentación para exponer en clase **10 minutos máximo**, con el estilo del deck del profe (índice de 14 láminas propuesto, hay que achicarlo). No citar la tasa real 2021 (1,47 %) que aparece en la lámina 15 del profe.
 
 **Git:** commits locales sin pushear desde `c357f1e`. El push lo hace Osvaldo.
 
