@@ -15,7 +15,20 @@ Desafío de la clase 6 de Aplicaciones de Ciencia de Datos (UNO, 2026): repartir
 
 ## Cómo correrlo
 
-Los datos no están en el repo (licencia CC BY-NC y tamaño). El notebook los lee desde `../predicciones/clase6/desafio_ministerio/`. Tarda unos 7 minutos.
+**1. Los datos.** No están en el repo, por la licencia (CC BY-NC) y por el tamaño (~60 MB). Son los dos archivos del desafío, que están en el material de la clase 6 (`desafio_ministerio/`). Copialos, sin descomprimir, a una carpeta `datos/` en la raíz del repo:
+
+```
+acd-minedu/
+├── datos/
+│   ├── chile_2014_2020.csv.gz
+│   └── chile_2021.csv.gz
+├── desafio.ipynb
+└── ...
+```
+
+La carpeta `datos/` está en el `.gitignore`, así que nunca se sube.
+
+**2. Correr el notebook.** Tarda unos 7 minutos y vuelve a generar `entrega.csv` y el anexo.
 
 ```bash
 pip install -r requirements.txt
