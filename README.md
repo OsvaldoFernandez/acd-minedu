@@ -2,7 +2,7 @@
 
 Desafío de la clase 6 de Aplicaciones de Ciencia de Datos (UNO, 2026): repartir US$ 1.000.000 entre los alumnos de la foto 2021 para evitar la mayor cantidad posible de abandonos en 2022.
 
-**Estado:** en progreso. Ya está el feature engineering; faltan el modelo final, los escenarios de calibración y el reparto.
+**Estado:** en progreso. Listos el FE (features: las de la clase + percentiles), los modelos finales y la primera mirada a los escenarios de calibración. Faltan los mapeos por escenario, el reparto y la matriz de arrepentimiento.
 
 ## Contenido
 
