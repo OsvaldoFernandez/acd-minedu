@@ -6,7 +6,7 @@
 
 El notebook `desafio.ipynb` corre completo hasta la sección 9 (unos 6–7 minutos con `jupyter nbconvert --to notebook --execute --inplace desafio.ipynb`). Falta **una sola decisión** y la entrega.
 
-**Pendiente inmediato: 🟨 10. Regla de elección.** La propuesta sobre la mesa es entregar el reparto **"sin E · normal"**, elegido por minimax de arrepentimiento. La alternativa "prudente" es el reparto "como 2020", que pierde 13 abandonos en el peor caso en lugar de 5,6.
+**🟨 10 resuelto (2026-11-16):** minimax → reparto "sin E · normal"; `entrega.csv` generado y validado; README final escrito. Pendiente: decidir si se adjunta el reparto "como 2020" como anexo y armar la presentación.
 
 **Git:** hay dos commits locales sin pushear (`c357f1e`, `64e81d6`). El push lo hace Osvaldo.
 
