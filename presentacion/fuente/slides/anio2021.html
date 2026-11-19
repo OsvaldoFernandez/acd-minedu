@@ -1,0 +1,15 @@
+<section id="anio2021">
+<div class="head">
+<p class="eyebrow">EL MODELO · PRIMERA PREGUNTA</p>
+<h2>¿A qué año se parece la foto 2021?</h2>
+<p class="lead">Validación adversarial: un modelo intenta adivinar de qué año es cada alumno. Cuanto más cerca de 0,5, más se parecen los años.</p>
+</div>
+<div class="row">
+<div class="card grey"><p class="pill grey">2021 contra 2018 (año normal)</p><p class="num blue">0,840</p><p>Los distingue con facilidad.</p></div>
+<div class="card red"><p class="pill red">2021 contra 2020 (pandemia)</p><p class="num">0,686</p><p>Se parecen mucho más: notas altas, pocos retirados, pocos cambios de escuela.</p></div>
+<div class="card navy"><p class="pill navy">Pero la asistencia</p><p class="num navy">7,5 %</p><p>con asistencia ≤ 70 %: el doble que cualquier año anterior.</p></div>
+</div>
+<div class="callout"><p>Por eso elegimos las features mirando el <b>backtest de pandemia</b>: entrena con 2015–2019 y evalúa en 2020.</p></div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+<aside>(35 s) Antes de elegir variables nos preguntamos a qué año se parece 2021. Entrenamos un modelo para adivinar el año de cada alumno: contra 2018 lo distingue fácil, con AUC 0,84; contra 2020, mucho menos, 0,69. 2021 se parece a la pandemia: notas altas por la promoción flexible, pocos retirados, pocos cambios de escuela. La excepción es la asistencia, que es la peor de toda la serie. Conclusión: para elegir features, mandó el backtest que evalúa en 2020.</aside>
+</section>

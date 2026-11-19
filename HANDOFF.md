@@ -52,3 +52,7 @@ El notebook `desafio.ipynb` corre completo hasta la sección 9 (unos 6–7 minut
 ## Cómo retomar
 
 Leer este archivo, abrir `desafio.ipynb` en la sección 9 (las salidas ya están guardadas) y arrancar por la 🟨 10.
+
+## Presentación (2026-11-19)
+
+Hecha: 8 láminas, unos 5 minutos, con notas del orador y tiempos. Artifact privado: https://claude.ai/artifact/K2ErUmHgpn7YjSuDkosogL (se comparte desde Share). Copia en el repo: `presentacion/presentacion.html`, con las fuentes en `presentacion/fuente/`. Integrantes: Carlos Canova, Javier Cescon, Osvaldo Fernandez. Pendiente: que el grupo la revise.

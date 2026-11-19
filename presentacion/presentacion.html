@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Un millón contra el abandono escolar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+body { font-family: 'IBM Plex Sans', Arial, sans-serif; color: #1B2A3A; }
+section { counter-increment: page; box-sizing: border-box; padding: 128px 128px 160px; background: #F6F4EE; color: #1B2A3A; display: flex; flex-direction: column; gap: 32px; }
+section.dark { background: #1B2A3A; color: #F6F4EE; }
+section.cover { padding: 128px; justify-content: space-between; }
+h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; margin: 0; }
+h1 { font-size: 112px; font-weight: 600; line-height: 1.05; }
+h2 { font-size: 64px; font-weight: 600; line-height: 1.1; }
+h3 { font-size: 40px; font-weight: 600; line-height: 1.15; }
+p { font-size: 28px; line-height: 1.4; margin: 0; }
+.eyebrow { font-size: 24px; font-weight: 600; letter-spacing: 2px; color: #A8442F; }
+.dark .eyebrow { color: #E3977C; }
+.lead { font-size: 32px; color: #3D4A57; }
+.dark .lead { color: #C9D3DC; }
+.small { font-size: 24px; line-height: 1.4; color: #3D4A57; }
+.dark .small { color: #C9D3DC; }
+.head { display: flex; flex-direction: column; gap: 16px; }
+.row { display: flex; gap: 28px; align-items: stretch; }
+.col { display: flex; flex-direction: column; gap: 20px; }
+.spacer { flex: 1; }
+.card { flex: 1; background: #FFFDF8; border: 2px solid #DAD4C6; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 14px; }
+.card.blue { border-color: #2F5D8A; }
+.card.red { border-color: #A8442F; }
+.card.grey { border-color: #5A6470; }
+.card.navy { border-color: #1B2A3A; }
+.dark .card { background: #24384D; border-color: #3A5068; }
+.pill { font-size: 24px; font-weight: 600; color: #F6F4EE; background: #2F5D8A; border-radius: 999px; padding: 4px 18px; align-self: flex-start; }
+.pill.red { background: #A8442F; }
+.pill.grey { background: #5A6470; }
+.pill.navy { background: #1B2A3A; }
+.dark .pill { background: #E3977C; color: #1B2A3A; }
+.callout { background: #F1DDD5; border-radius: 16px; padding: 24px 36px; }
+.callout p { font-size: 28px; color: #1B2A3A; }
+.callout-dark { background: #1B2A3A; border-radius: 16px; padding: 24px 36px; }
+.callout-dark p { font-size: 28px; color: #F6F4EE; }
+.num { font-family: 'Source Serif 4', Georgia, serif; font-size: 96px; font-weight: 700; line-height: 1; color: #A8442F; }
+.num.blue { color: #2F5D8A; }
+.dark .num { color: #E3977C; }
+.mid { font-family: 'Source Serif 4', Georgia, serif; font-size: 56px; font-weight: 700; line-height: 1; color: #1B2A3A; }
+.formula { font-size: 32px; font-weight: 600; color: #1B2A3A; }
+table { font-size: 28px; color: #1B2A3A; width: 100%; }
+table.compact { font-size: 24px; }
+table.big { font-size: 32px; }
+th { text-align: left; }
+.num.navy { color: #1B2A3A; }
+.hl { background: #F1DDD5; }
+.hlb { background: #DCE6F0; }
+.foot { position: absolute; left: 128px; bottom: 64px; width: 1664px; display: flex; justify-content: space-between; }
+.foot p { font-size: 24px; color: #5A6470; }
+.dark .foot p { color: #C9D3DC; }
+.pg::after { content: counter(page); }
+.names { display: flex; gap: 48px; }
+.names p { font-size: 32px; color: #F6F4EE; }
+
+
+html { background: #24384D; }
+body { counter-reset: page; }
+body { margin: 0; padding: 24px 16px 64px; }
+.frame { width: min(1280px, 100%); aspect-ratio: 16 / 9; margin: 0 auto; overflow: hidden; position: relative; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+.canvas { width: 1920px; height: 1080px; transform-origin: top left; position: absolute; left: 0; top: 0; }
+.canvas > section { width: 1920px; height: 1080px; position: relative; }
+.notes { width: min(1280px, 100%); margin: 12px auto 40px; font-family: 'IBM Plex Sans', Arial, sans-serif; }
+.notes summary { cursor: pointer; font-size: 15px; color: #C9D3DC; }
+.notes p { font-size: 16px; line-height: 1.5; color: #E6E9F0; margin-top: 8px; }
+
+</style>
+</head>
+<body>
+<div class="frame"><div class="canvas"><section id="cover" class="dark cover">
+<p class="eyebrow">UNO · APLICACIONES DE CIENCIA DE DATOS · DESAFÍO DE LA CLASE 6</p>
+<div class="col" style="gap:32px;">
+<h1>Un millón de dólares<br>contra el abandono escolar</h1>
+<p class="lead">A quién darle la plata en 2021 para evitar la mayor cantidad de abandonos en 2022.</p>
+</div>
+<div class="names"><p>Carlos Canova</p><p>Javier Cescon</p><p>Osvaldo Fernandez</p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(15 s) Somos Carlos, Javier y Osvaldo. Les contamos cómo repartimos el millón del desafío y, sobre todo, cómo decidimos cuando los datos no alcanzaban para decidir.</p></details>
+<div class="frame"><div class="canvas"><section id="desafio">
+<div class="head">
+<p class="eyebrow">EL DESAFÍO</p>
+<h2>US$ 1.000.000 para la foto 2021</h2>
+</div>
+<div class="row">
+<div class="card blue"><p class="pill">La plata</p><p>Invertir <b>m</b> dólares en un alumno baja su riesgo de abandonar:</p><p class="formula" style="white-space:nowrap;">efecto(m) =<br>0,6 · (1 − e^(−m/200))</p><p class="small">Cada dólar extra rinde menos que el anterior.</p></div>
+<div class="card red"><p class="pill red">Cómo se corrige</p><p>Se suma el efecto de la plata sobre los alumnos que <b>de verdad abandonaron en 2022</b>.</p></div>
+<div class="card grey"><p class="pill grey">La regla</p><p>Nada de datos externos del MINEDUC. Tampoco usamos las tasas reales de 2022.</p></div>
+</div>
+<div class="callout-dark"><p><b>Nuestra respuesta:</b> 6.419 alumnos, entre US$ 0,03 y US$ 432, todos con riesgo predicho de al menos 11 %. Cuanto más riesgo, más plata.</p></div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(35 s) El ministerio nos da un millón de dólares para los alumnos de la foto 2021. La plata baja el riesgo de abandonar, pero con rendimientos decrecientes: el dólar 300 rinde mucho menos que el primero. Nos corrigen con lo que pasó en 2022: cuenta solo la plata que fue a chicos que efectivamente abandonaron. Y no vale usar datos externos. Nuestra respuesta, en una línea: le damos plata a 6.419 alumnos, todos con riesgo de 11 % o más, y más plata cuanto más riesgo.</p></details>
+<div class="frame"><div class="canvas"><section id="anio2021">
+<div class="head">
+<p class="eyebrow">EL MODELO · PRIMERA PREGUNTA</p>
+<h2>¿A qué año se parece la foto 2021?</h2>
+<p class="lead">Validación adversarial: un modelo intenta adivinar de qué año es cada alumno. Cuanto más cerca de 0,5, más se parecen los años.</p>
+</div>
+<div class="row">
+<div class="card grey"><p class="pill grey">2021 contra 2018 (año normal)</p><p class="num blue">0,840</p><p>Los distingue con facilidad.</p></div>
+<div class="card red"><p class="pill red">2021 contra 2020 (pandemia)</p><p class="num">0,686</p><p>Se parecen mucho más: notas altas, pocos retirados, pocos cambios de escuela.</p></div>
+<div class="card navy"><p class="pill navy">Pero la asistencia</p><p class="num navy">7,5 %</p><p>con asistencia ≤ 70 %: el doble que cualquier año anterior.</p></div>
+</div>
+<div class="callout"><p>Por eso elegimos las features mirando el <b>backtest de pandemia</b>: entrena con 2015–2019 y evalúa en 2020.</p></div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(35 s) Antes de elegir variables nos preguntamos a qué año se parece 2021. Entrenamos un modelo para adivinar el año de cada alumno: contra 2018 lo distingue fácil, con AUC 0,84; contra 2020, mucho menos, 0,69. 2021 se parece a la pandemia: notas altas por la promoción flexible, pocos retirados, pocos cambios de escuela. La excepción es la asistencia, que es la peor de toda la serie. Conclusión: para elegir features, mandó el backtest que evalúa en 2020.</p></details>
+<div class="frame"><div class="canvas"><section id="features">
+<div class="head">
+<p class="eyebrow">EL MODELO · FEATURE ENGINEERING</p>
+<h2>Cinco ideas nuevas, una sola entró</h2>
+</div>
+<div class="row" style="gap:40px;">
+<div class="col" style="width:1060px;">
+<table>
+<tr><th style="width:42%;">Grupo (sobre el FE de la clase)</th><th style="width:18%; text-align:center;">Δ AUC 2020</th><th style="width:40%;">Decisión</th></tr>
+<tr class="hlb"><td>C · percentiles en el año</td><td style="text-align:center;">+0,009</td><td>Entra: mira la posición, no el nivel</td></tr>
+<tr><td>A · retirados con NaN</td><td style="text-align:center;">≈ 0</td><td>Afuera</td></tr>
+<tr><td>B · huecos previos</td><td style="text-align:center;">≈ 0</td><td>Afuera</td></tr>
+<tr><td>D · cambios de la escuela</td><td style="text-align:center;">−0,002</td><td>Afuera: escuelas anómalas en 2021</td></tr>
+<tr><td>E · asistencia y notas de t−2</td><td style="text-align:center;">≈ 0</td><td>Afuera: no cambia el reparto</td></tr>
+<tr class="hl"><td>Sacar anios_previos</td><td style="text-align:center;">−0,023</td><td>Queda</td></tr>
+</table>
+<p class="small">E no se podía juzgar con un backtest: en 2021, el año anterior es 2020, con asistencia inflada. Lo comparamos en el reparto: 87 % de alumnos compartidos.</p>
+</div>
+<div class="card red"><p class="pill red">Por qué anios_previos importa</p><p>Los que aparecen por primera vez fuera de 1° básico abandonan</p><p class="num">24,6 %</p><p>contra <b>1,2 %</b> de los que tienen historia continua.</p></div>
+</div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(45 s) Probamos cinco grupos de variables nuevas, uno por vez: eso es la ablación. Solo entró C, los percentiles dentro del año, que aguantan los cambios de nivel de la pandemia. A y B no suman. D resta, y en 2021 hay escuelas con caídas de asistencia que el modelo nunca vio. E, el año t−2, no se podía evaluar con un backtest, porque en 2021 el año anterior es la pandemia; lo comparamos directamente en el reparto y no cambia nada. Y una sorpresa: anios_previos, que creíamos riesgosa, es clave. Los chicos que aparecen de golpe fuera de 1° básico abandonan veinte veces más.</p></details>
+<div class="frame"><div class="canvas"><section id="reparto">
+<div class="head">
+<p class="eyebrow">EL REPARTO</p>
+<h2>Cada dólar va donde más rinde</h2>
+</div>
+<div class="row" style="gap:40px;">
+<div class="col" style="width:760px;">
+<p>El próximo dólar en un alumno evita <b>p · 0,003 · e^(−m/200)</b> abandonos: su riesgo por lo que todavía rinde.</p>
+<p>Se reparte hasta que el último dólar rinde lo mismo en todos los que reciben algo.</p>
+<div class="callout"><p>Si todas las <b>p</b> se multiplican por el mismo factor, <b>el reparto no cambia</b>. Importan las proporciones entre alumnos, no el nivel.</p></div>
+</div>
+<div class="col" style="flex:1;">
+<table>
+<tr><th style="width:34%;">Riesgo predicho</th><th style="width:30%; text-align:right;">Con plata</th><th style="width:36%; text-align:right;">Total</th></tr>
+<tr><td>0–10 %</td><td style="text-align:right;">0</td><td style="text-align:right;">—</td></tr>
+<tr><td>10–20 %</td><td style="text-align:right;">3.081</td><td style="text-align:right;">US$ 182 mil</td></tr>
+<tr><td>20–40 %</td><td style="text-align:right;">1.916</td><td style="text-align:right;">US$ 341 mil</td></tr>
+<tr class="hl"><td>40–100 %</td><td style="text-align:right;">1.422</td><td style="text-align:right;">US$ 477 mil</td></tr>
+</table>
+<p class="small">Modelo final: LightGBM de la clase, entrenado con 2015–2020, sobre los 277.541 alumnos de la foto 2021 que no egresan.</p>
+</div>
+</div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(40 s) Con las probabilidades del modelo repartimos así: cada dólar va al alumno donde más rinde, y eso es su riesgo por lo que todavía rinde el dólar. El resultado: la plata se concentra en los de riesgo más alto, pero no toda en ellos; a medida que un chico recibe, su próximo dólar rinde menos y conviene pasar al siguiente. Hay un detalle clave para lo que sigue: si todas las probabilidades se inflan por el mismo factor, el reparto no cambia. Lo que importa es la forma, cuánto más riesgoso es uno que otro.</p></details>
+<div class="frame"><div class="canvas"><section id="raros">
+<div class="head">
+<p class="eyebrow">ESCENARIOS</p>
+<h2>¿Cómo falló el modelo en los años raros?</h2>
+<p class="lead">Abandonos reales sobre predichos, en los grupos donde va la plata. 1 = acertó.</p>
+</div>
+<table class="big" style="width:1300px;">
+<tr><th style="width:31%;">Riesgo predicho</th><th style="width:23%; text-align:right;">Normal 2018</th><th style="width:23%; text-align:right;">Estallido 2019</th><th style="width:23%; text-align:right;">Pandemia 2020</th></tr>
+<tr><td>10–20 %</td><td style="text-align:right;">1,06</td><td style="text-align:right;">1,14</td><td style="text-align:right;">0,61</td></tr>
+<tr><td>20–40 %</td><td style="text-align:right;">0,89</td><td style="text-align:right;">0,85</td><td style="text-align:right;">0,46</td></tr>
+<tr><td>40–100 %</td><td style="text-align:right;">0,95</td><td style="text-align:right;">1,05</td><td style="text-align:right;">0,74</td></tr>
+</table>
+<div class="row">
+<div class="card grey"><p class="pill grey">2019 · se descarta</p><p>Donde va la plata se comportó como un año normal. Su sorpresa (21 % más abandonos) fue en chicos de riesgo bajo, que ningún reparto alcanza.</p></div>
+<div class="card red"><p class="pill red">2020 · se queda</p><p>Exageró justo donde va la plata, y <b>no de forma pareja</b>: el grupo 20–40 % a menos de la mitad. Es un mundo distinto.</p></div>
+</div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(45 s) No sabemos cómo se va a comportar 2022, y no usamos datos externos. Lo que sí tenemos son dos sorpresas con etiqueta: 2019 y 2020. Miramos cuánto se equivocó el modelo en los grupos de riesgo que reciben plata. 2019 está cerca de 1, como un año normal: su sorpresa estuvo en chicos de riesgo bajo, invisible para cualquier reparto. 2020 es otra cosa: el modelo exageró, y desparejo. Como un factor parejo no mueve el reparto pero uno desparejo sí, quedan dos mundos posibles: normal y como 2020, este último con una corrección isotónica.</p></details>
+<div class="frame"><div class="canvas"><section id="arrepentimiento">
+<div class="head">
+<p class="eyebrow">LA ELECCIÓN</p>
+<h2>¿Cuánto cuesta equivocarse de mundo?</h2>
+<p class="lead">Matriz de arrepentimiento: abandonos evitados esperados que se pierden contra lo mejor posible.</p>
+</div>
+<div class="row" style="gap:40px;">
+<div class="col" style="width:1000px;">
+<table>
+<tr><th style="width:40%;"></th><th style="width:30%; text-align:right;">Si 2022 es normal</th><th style="width:30%; text-align:right;">Si 2022 es como 2020</th></tr>
+<tr class="hl"><td>Reparto normal</td><td style="text-align:right;">0</td><td style="text-align:right;">−5,6 (1,3 %)</td></tr>
+<tr><td>Reparto como 2020</td><td style="text-align:right;">−13,0 (1,9 %)</td><td style="text-align:right;">0</td></tr>
+</table>
+<p>Entregamos el <b>reparto normal</b>: es el que menos pierde en el peor caso. No supone que 2022 sea normal.</p>
+</div>
+<div class="card blue"><p class="pill">Anexo</p><p>Adjuntamos el reparto “como 2020”. No es otra entrega: con los datos de 2022 se pueden puntuar los dos y saber <b>qué mundo ocurrió</b>.</p></div>
+</div>
+<div class="callout-dark"><p>Los dos repartos comparten solo el 73 % de los alumnos, pero rinden casi lo mismo: <b>el óptimo es plano</b>.</p></div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(40 s) Calculamos el reparto óptimo para cada mundo y lo evaluamos en el otro. Si entregamos el normal y 2022 resulta como 2020, perdemos 5,6 abandonos evitados; al revés, perdemos 13. Elegimos el normal, no porque creamos que 2022 va a ser normal, sino porque es el que menos pierde si nos equivocamos. Equivocarse cuesta menos del 2 %: los dos repartos le dan plata a chicos bastante distintos y rinden casi igual. Adjuntamos el otro reparto como anexo para que, con los datos reales, se sepa qué mundo pasó.</p></details>
+<div class="frame"><div class="canvas"><section id="cierre" class="dark">
+<div class="head">
+<p class="eyebrow">PARA LLEVARSE</p>
+<h2>Cuatro ideas</h2>
+</div>
+<div class="row">
+<div class="card"><p class="pill">Proporciones</p><p>Para repartir no alcanza con ordenar bien. Un error parejo no mueve nada; uno desparejo, sí.</p></div>
+<div class="card"><p class="pill">Escenarios</p><p>Lo que los datos no pueden contestar se arma en alternativas y se mide cuánto cambia la decisión.</p></div>
+<div class="card"><p class="pill">Lo invisible</p><p>Los abandonos inesperados entre chicos de riesgo bajo no los alcanza ningún reparto.</p></div>
+<div class="card"><p class="pill">Causalidad</p><p>Los 688 abandonos evitados esperados suponen que la plata funciona como dice el ministerio. Eso es causal.</p></div>
+</div>
+<div class="spacer"></div>
+<p class="lead">Código, decisiones y entrega: repositorio acd-minedu · desafio.ipynb y README.md</p>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+</section></div></div>
+<details class="notes"><summary>Notas del orador</summary><p>(30 s) Nos llevamos cuatro ideas. Para repartir no alcanza con ordenar bien: importan las proporciones. Cuando los datos no alcanzan, armamos escenarios y medimos cuánto cambia la decisión. Hay abandonos que ningún reparto basado en este modelo puede alcanzar. Y nuestros 688 abandonos evitados esperados descansan en un supuesto causal: que la plata funciona como dice el ministerio. Eso es lo que viene en la parte de inferencia causal. Gracias.</p></details>
+<script>
+function fit() { document.querySelectorAll('.frame').forEach(f => { f.querySelector('.canvas').style.transform = 'scale(' + (f.clientWidth / 1920) + ')'; }); }
+window.addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>
