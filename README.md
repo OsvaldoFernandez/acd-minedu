@@ -55,6 +55,8 @@ jupyter nbconvert --to notebook --execute --inplace desafio.ipynb
 
 Entregamos el **reparto normal**: es el que menos pierde en el peor caso (y también en promedio). Los dos repartos comparten solo el 73 % de los alumnos, pero rinden casi lo mismo: el óptimo es plano.
 
+El reparto normal **no supone que 2022 sea un año normal**: es el que menos pierde si nos equivocamos de mundo. La foto 2021 se parece a 2020 (por eso pesó el backtest de pandemia al elegir features), pero cómo se comporte 2022 es otra pregunta, que no podemos responder con los datos.
+
 **Anexo.** El reparto "como 2020" va en `anexos/reparto_como_2020.csv` (8.815 alumnos, US$ 999.956,34). **No es una segunda entrega:** la oficial es `entrega.csv`. Lo adjuntamos porque, al corregir con lo que pasó en 2022, se pueden puntuar los dos repartos y saber qué mundo ocurrió, que es la única forma de cerrar la pregunta de los escenarios.
 
 ## Features: qué probamos y qué descartamos
