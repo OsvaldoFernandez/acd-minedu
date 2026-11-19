@@ -1,0 +1,23 @@
+<section id="features">
+<div class="head">
+<p class="eyebrow">EL MODELO · FEATURE ENGINEERING</p>
+<h2>Cinco ideas nuevas, una sola entró</h2>
+</div>
+<div class="row" style="gap:40px;">
+<div class="col" style="width:1060px;">
+<table>
+<tr><th style="width:42%;">Grupo (sobre el FE de la clase)</th><th style="width:18%; text-align:center;">Δ AUC 2020</th><th style="width:40%;">Decisión</th></tr>
+<tr class="hlb"><td>C · percentiles en el año</td><td style="text-align:center;">+0,009</td><td>Entra: mira la posición, no el nivel</td></tr>
+<tr><td>A · retirados con NaN</td><td style="text-align:center;">≈ 0</td><td>Afuera</td></tr>
+<tr><td>B · huecos previos</td><td style="text-align:center;">≈ 0</td><td>Afuera</td></tr>
+<tr><td>D · cambios de la escuela</td><td style="text-align:center;">−0,002</td><td>Afuera: escuelas anómalas en 2021</td></tr>
+<tr><td>E · asistencia y notas de t−2</td><td style="text-align:center;">≈ 0</td><td>Afuera: no cambia el reparto</td></tr>
+<tr class="hl"><td>Sacar anios_previos</td><td style="text-align:center;">−0,023</td><td>Queda</td></tr>
+</table>
+<p class="small">E no se podía juzgar con un backtest: en 2021, el año anterior es 2020, con asistencia inflada. Lo comparamos en el reparto: 87 % de alumnos compartidos.</p>
+</div>
+<div class="card red"><p class="pill red">Por qué anios_previos importa</p><p>Los que aparecen por primera vez fuera de 1° básico abandonan</p><p class="num">24,6 %</p><p>contra <b>1,2 %</b> de los que tienen historia continua.</p></div>
+</div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+<aside>(45 s) Probamos cinco grupos de variables nuevas, uno por vez: eso es la ablación. Solo entró C, los percentiles dentro del año, que aguantan los cambios de nivel de la pandemia. A y B no suman. D resta, y en 2021 hay escuelas con caídas de asistencia que el modelo nunca vio. E, el año t−2, no se podía evaluar con un backtest, porque en 2021 el año anterior es la pandemia; lo comparamos directamente en el reparto y no cambia nada. Y una sorpresa: anios_previos, que creíamos riesgosa, es clave. Los chicos que aparecen de golpe fuera de 1° básico abandonan veinte veces más.</aside>
+</section>

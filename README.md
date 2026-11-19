@@ -12,6 +12,7 @@ Desafío de la clase 6 de Aplicaciones de Ciencia de Datos (UNO, 2026): repartir
 | `anexos/reparto_como_2020.csv` | Anexo, no es entrega: el reparto óptimo si 2022 se comporta como 2020 |
 | `desafio.ipynb` | El código que arma la entrega: FE, backtests, modelos, escenarios y reparto |
 | `reflexion.md` | Resumen de lo aprendido en la clase 6 |
+| `presentacion/presentacion.html` | Presentación de 5 minutos, con notas del orador (`presentacion/fuente/` tiene una lámina por archivo) |
 
 ## Cómo correrlo
 

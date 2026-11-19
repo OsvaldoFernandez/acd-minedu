@@ -1,0 +1,25 @@
+<section id="reparto">
+<div class="head">
+<p class="eyebrow">EL REPARTO</p>
+<h2>Cada dólar va donde más rinde</h2>
+</div>
+<div class="row" style="gap:40px;">
+<div class="col" style="width:760px;">
+<p>El próximo dólar en un alumno evita <b>p · 0,003 · e^(−m/200)</b> abandonos: su riesgo por lo que todavía rinde.</p>
+<p>Se reparte hasta que el último dólar rinde lo mismo en todos los que reciben algo.</p>
+<div class="callout"><p>Si todas las <b>p</b> se multiplican por el mismo factor, <b>el reparto no cambia</b>. Importan las proporciones entre alumnos, no el nivel.</p></div>
+</div>
+<div class="col" style="flex:1;">
+<table>
+<tr><th style="width:34%;">Riesgo predicho</th><th style="width:30%; text-align:right;">Con plata</th><th style="width:36%; text-align:right;">Total</th></tr>
+<tr><td>0–10 %</td><td style="text-align:right;">0</td><td style="text-align:right;">—</td></tr>
+<tr><td>10–20 %</td><td style="text-align:right;">3.081</td><td style="text-align:right;">US$ 182 mil</td></tr>
+<tr><td>20–40 %</td><td style="text-align:right;">1.916</td><td style="text-align:right;">US$ 341 mil</td></tr>
+<tr class="hl"><td>40–100 %</td><td style="text-align:right;">1.422</td><td style="text-align:right;">US$ 477 mil</td></tr>
+</table>
+<p class="small">Modelo final: LightGBM de la clase, entrenado con 2015–2020, sobre los 277.541 alumnos de la foto 2021 que no egresan.</p>
+</div>
+</div>
+<div class="foot"><p>Un millón contra el abandono escolar</p><p class="pg"></p></div>
+<aside>(40 s) Con las probabilidades del modelo repartimos así: cada dólar va al alumno donde más rinde, y eso es su riesgo por lo que todavía rinde el dólar. El resultado: la plata se concentra en los de riesgo más alto, pero no toda en ellos; a medida que un chico recibe, su próximo dólar rinde menos y conviene pasar al siguiente. Hay un detalle clave para lo que sigue: si todas las probabilidades se inflan por el mismo factor, el reparto no cambia. Lo que importa es la forma, cuánto más riesgoso es uno que otro.</aside>
+</section>
